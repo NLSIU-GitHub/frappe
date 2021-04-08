@@ -1,20 +1,14 @@
-<nav class="navbar navbar-light bg-white navbar-expand-lg sticky-top shadow-sm">
-	<div class="container">
-		<a class="navbar-brand" href="{{ url_prefix }}{{ home_page or "/" }}">
-			<span>{{ brand_html or (frappe.get_hooks("brand_html") or [_("Home")])[0] }}</span>
-		</a>
-		<button class="navbar-toggler" type="button"
-			data-toggle="collapse"
-			data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent"
-			aria-expanded="false"
-			aria-label="Toggle navigation"
-		>
-			<span class="navbar-toggler-icon"></span>
-		</button>
+<nav class="navbar navbar-expand sticky-top  " style="background-color: #920c24; ">
+         <div >
+			<a class=" navbar-brand" href="#">
+				<img width="75" height="90" src="https://www.nls.ac.in/wp-content/uploads/2020/09/NLSIU-logo.png" class="custom-logo" alt="National Law School of India University logo">
+			</a>
+			<div  class=" navbar-text text-center text-wrap align-self-center " style="font-family: 'Merriweather', serif; font-weight: 300 ; color: white; 
+			">
+			   <p  style="margin: 0px 0px 4px;"> NATIONAL LAW SCHOOL OF INDIA UNIVERSITY</p>
+			   <p  style="margin: 0px 0px 4px;">BENGALURU</p>
+			  </div>
+		 </div>   
+	
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			{% include "templates/includes/navbar/navbar_items.html" %}
-		</div>
-	</div>
 </nav>
