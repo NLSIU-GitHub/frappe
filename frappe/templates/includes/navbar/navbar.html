@@ -1,8 +1,3 @@
-
-{% if frappe.session.user_type == 'Website User' %}
-
-<!-- NAVBAR : If a website user -->
-
  <nav class="navbar navbar-light navbar-expand-lg">
 	<div class="container">
 		<a class="navbar-brand" href="{{ url_prefix }}{{ home_page or "/" }}">
@@ -34,39 +29,4 @@
 
 
 
-{%- else -%} 
-<!-- navbar : if not a website user -->
 
-
-<!--<link href="/private/files/my-nls.css" rel="stylesheet"/>-->
-<header id="masthead" class="site-header">
-	<!-- .site-header__secondary -->
-
-   <div class="site-header__main">
-	   <div class="wrap">
-
-		   <div class="site-header__main-logo">
-			   <div class="site-branding">
-											   <p class="site-logo"><a href="https://www.nls.ac.in/" class="custom-logo-link" rel="home" aria-current="page"><img width="75" height="90" src="https://www.nls.ac.in/wp-content/uploads/2020/09/NLSIU-logo.png" class="custom-logo" alt="National Law School of India University logo"></a></p>
-									   </div><!-- .site-branding -->
-
-			   <div class="title-text">
-				   <p class="title-text__top">National Law School of India University</p>
-				   <p class="title-text__bottom card-meta">Bengaluru</p>
-			   </div> <!-- .title-text -->
-		   </div> <!-- .site-header__main-logo -->
-
-			<!-- .site-header__main-menu -->
-
-	   </div> <!-- .wrap -->
-
-		<!-- .site-header__search-container -->
-   </div> <!-- .site-header__main -->
-
-	<!-- .site-header__primary -->
-
-</header>
-
-
-
-{%- endif -%}
